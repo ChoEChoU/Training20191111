@@ -49,10 +49,14 @@ public class MyHelloPanelListener extends JPanel
         }
         public void keyPressed(KeyEvent e){
             int keyCode = e.getKeyCode();
+<<<<<<< HEAD
 
+=======
+>>>>>>> 861e27fefb89de1773c69d35e2dce1816a4b883d
             switch (keyCode) {
 
                 case KeyEvent.VK_UP:
+<<<<<<< HEAD
 
 
                     ml.setLocation(ml.getX(), ml.getY()-FLYING_UNIT); break;
@@ -68,7 +72,11 @@ public class MyHelloPanelListener extends JPanel
 
                     ml.setLocation(ml.getX(), ml.getY()-10); break;
 
+=======
+                    ml.setLocation(ml.getX(), ml.getY()-10); break;
+>>>>>>> 861e27fefb89de1773c69d35e2dce1816a4b883d
                 case KeyEvent.VK_DOWN:
+<<<<<<< HEAD
 
 
                     ml.setLocation(ml.getX(), ml.getY()+FLYING_UNIT); break;
@@ -84,7 +92,11 @@ public class MyHelloPanelListener extends JPanel
 
                     ml.setLocation(ml.getX(), ml.getY()+10); break;
 
+=======
+                    ml.setLocation(ml.getX(), ml.getY()+10); break;
+>>>>>>> 861e27fefb89de1773c69d35e2dce1816a4b883d
                 case KeyEvent.VK_LEFT:
+<<<<<<< HEAD
 
 
                     ml.setLocation(ml.getX()-FLYING_UNIT, ml.getY()); break;
@@ -100,7 +112,11 @@ public class MyHelloPanelListener extends JPanel
 
                     ml.setLocation(ml.getX()-10, ml.getY()); break;
 
+=======
+                    ml.setLocation(ml.getX()-10, ml.getY()); break;
+>>>>>>> 861e27fefb89de1773c69d35e2dce1816a4b883d
                 case KeyEvent.VK_RIGHT:
+<<<<<<< HEAD
 
 
                     ml.setLocation(ml.getX()+FLYING_UNIT, ml.getY()); break;
@@ -116,6 +132,9 @@ public class MyHelloPanelListener extends JPanel
 
                     ml.setLocation(ml.getX()+10, ml.getY()); break;
 
+=======
+                    ml.setLocation(ml.getX()+10, ml.getY()); break;
+>>>>>>> 861e27fefb89de1773c69d35e2dce1816a4b883d
             }
         }
     }
