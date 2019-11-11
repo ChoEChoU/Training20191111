@@ -27,6 +27,7 @@ public class MyHelloPanelListener extends JPanel
         public myMouseListener(JLabel ml){
             this.ml = ml;
         }
+
         public void mouseClicked(MouseEvent e){}
 
         public void mouseEntered(MouseEvent e){}
@@ -47,94 +48,21 @@ public class MyHelloPanelListener extends JPanel
         public myKeyListener(JLabel ml){
             this.ml = ml;
         }
+
         public void keyPressed(KeyEvent e){
             int keyCode = e.getKeyCode();
-<<<<<<< HEAD
-
-=======
->>>>>>> 861e27fefb89de1773c69d35e2dce1816a4b883d
+            public final int FLYING_UNIT = 10;
             switch (keyCode) {
 
                 case KeyEvent.VK_UP:
-<<<<<<< HEAD
-
-
-                    ml.setLocation(ml.getX(), ml.getY()-FLYING_UNIT); break;
-                    
-                    ml.setLocation(ml.getX(), ml.getY()-10); break;
-
-                    ml.setLocation(ml.getX(), ml.getY()-10); break;
-
-                    ml.setLocation(ml.getX(), ml.getY()-10); break;
-
-                    ml.setLocation(ml.getX(), ml.getY()-10); break;
-
-
-                    ml.setLocation(ml.getX(), ml.getY()-10); break;
-
-=======
-                    ml.setLocation(ml.getX(), ml.getY()-10); break;
->>>>>>> 861e27fefb89de1773c69d35e2dce1816a4b883d
+                ml.setLocation(ml.getX(), ml.getY()-FLYING_UNIT); break;
                 case KeyEvent.VK_DOWN:
-<<<<<<< HEAD
-
-
-                    ml.setLocation(ml.getX(), ml.getY()+FLYING_UNIT); break;
-
-                    ml.setLocation(ml.getX(), ml.getY()+10); break;
-
-                    ml.setLocation(ml.getX(), ml.getY()+10); break;
-
-                    ml.setLocation(ml.getX(), ml.getY()+10); break;
-
-                    ml.setLocation(ml.getX(), ml.getY()+10); break;
-
-
-                    ml.setLocation(ml.getX(), ml.getY()+10); break;
-
-=======
-                    ml.setLocation(ml.getX(), ml.getY()+10); break;
->>>>>>> 861e27fefb89de1773c69d35e2dce1816a4b883d
+                ml.setLocation(ml.getX(), ml.getY()+FLYING_UNIT); break;
                 case KeyEvent.VK_LEFT:
-<<<<<<< HEAD
-
-
-                    ml.setLocation(ml.getX()-FLYING_UNIT, ml.getY()); break;
-
-                    ml.setLocation(ml.getX()-10, ml.getY()); break;
-
-                    ml.setLocation(ml.getX()-10, ml.getY()); break;
-
-                    ml.setLocation(ml.getX()-10, ml.getY()); break;
-
-                    ml.setLocation(ml.getX()-10, ml.getY()); break;
-
-
-                    ml.setLocation(ml.getX()-10, ml.getY()); break;
-
-=======
-                    ml.setLocation(ml.getX()-10, ml.getY()); break;
->>>>>>> 861e27fefb89de1773c69d35e2dce1816a4b883d
+                ml.setLocation(ml.getX()-FLYING_UNIT, ml.getY()); break;
                 case KeyEvent.VK_RIGHT:
-<<<<<<< HEAD
+                ml.setLocation(ml.getX()+FLYING_UNIT, ml.getY()); break;
 
-
-                    ml.setLocation(ml.getX()+FLYING_UNIT, ml.getY()); break;
-
-                    ml.setLocation(ml.getX()+10, ml.getY()); break;
-
-                    ml.setLocation(ml.getX()+10, ml.getY()); break;
-
-                    ml.setLocation(ml.getX()+10, ml.getY()); break;
-
-                    ml.setLocation(ml.getX()+10, ml.getY()); break;
-
-
-                    ml.setLocation(ml.getX()+10, ml.getY()); break;
-
-=======
-                    ml.setLocation(ml.getX()+10, ml.getY()); break;
->>>>>>> 861e27fefb89de1773c69d35e2dce1816a4b883d
             }
         }
     }
