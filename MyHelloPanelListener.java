@@ -50,12 +50,10 @@ public class MyHelloPanelListener extends JPanel
         public void keyPressed(KeyEvent e){
             int keyCode = e.getKeyCode();
 
-            
-      
-
             switch (keyCode) {
 
                 case KeyEvent.VK_UP:
+
 
                     ml.setLocation(ml.getX(), ml.getY()-FLYING_UNIT); break;
                     
@@ -67,7 +65,11 @@ public class MyHelloPanelListener extends JPanel
 
                     ml.setLocation(ml.getX(), ml.getY()-10); break;
 
+
+                    ml.setLocation(ml.getX(), ml.getY()-10); break;
+
                 case KeyEvent.VK_DOWN:
+
 
                     ml.setLocation(ml.getX(), ml.getY()+FLYING_UNIT); break;
 
@@ -79,7 +81,11 @@ public class MyHelloPanelListener extends JPanel
 
                     ml.setLocation(ml.getX(), ml.getY()+10); break;
 
+
+                    ml.setLocation(ml.getX(), ml.getY()+10); break;
+
                 case KeyEvent.VK_LEFT:
+
 
                     ml.setLocation(ml.getX()-FLYING_UNIT, ml.getY()); break;
 
@@ -91,7 +97,11 @@ public class MyHelloPanelListener extends JPanel
 
                     ml.setLocation(ml.getX()-10, ml.getY()); break;
 
+
+                    ml.setLocation(ml.getX()-10, ml.getY()); break;
+
                 case KeyEvent.VK_RIGHT:
+
 
                     ml.setLocation(ml.getX()+FLYING_UNIT, ml.getY()); break;
 
@@ -100,6 +110,9 @@ public class MyHelloPanelListener extends JPanel
                     ml.setLocation(ml.getX()+10, ml.getY()); break;
 
                     ml.setLocation(ml.getX()+10, ml.getY()); break;
+
+                    ml.setLocation(ml.getX()+10, ml.getY()); break;
+
 
                     ml.setLocation(ml.getX()+10, ml.getY()); break;
 
