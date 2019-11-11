@@ -49,74 +49,60 @@ public class MyHelloPanelListener extends JPanel
         }
         public void keyPressed(KeyEvent e){
             int keyCode = e.getKeyCode();
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
             
-            switch(keyCode) {
-=======
-=======
->>>>>>> 861e27fefb89de1773c69d35e2dce1816a4b883d
-=======
->>>>>>> 861e27fefb89de1773c69d35e2dce1816a4b883d
+      
+
             switch (keyCode) {
->>>>>>> a5bf69049c8d7693c254bf2358a8624245b9c7c2
+
                 case KeyEvent.VK_UP:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
                     ml.setLocation(ml.getX(), ml.getY()-FLYING_UNIT); break;
-=======
+                    
                     ml.setLocation(ml.getX(), ml.getY()-10); break;
->>>>>>> a5bf69049c8d7693c254bf2358a8624245b9c7c2
-=======
+
                     ml.setLocation(ml.getX(), ml.getY()-10); break;
->>>>>>> 861e27fefb89de1773c69d35e2dce1816a4b883d
-=======
+
                     ml.setLocation(ml.getX(), ml.getY()-10); break;
->>>>>>> 861e27fefb89de1773c69d35e2dce1816a4b883d
+
+                    ml.setLocation(ml.getX(), ml.getY()-10); break;
+
                 case KeyEvent.VK_DOWN:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
                     ml.setLocation(ml.getX(), ml.getY()+FLYING_UNIT); break;
-=======
+
                     ml.setLocation(ml.getX(), ml.getY()+10); break;
->>>>>>> a5bf69049c8d7693c254bf2358a8624245b9c7c2
-=======
+
                     ml.setLocation(ml.getX(), ml.getY()+10); break;
->>>>>>> 861e27fefb89de1773c69d35e2dce1816a4b883d
-=======
+
                     ml.setLocation(ml.getX(), ml.getY()+10); break;
->>>>>>> 861e27fefb89de1773c69d35e2dce1816a4b883d
+
+                    ml.setLocation(ml.getX(), ml.getY()+10); break;
+
                 case KeyEvent.VK_LEFT:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
                     ml.setLocation(ml.getX()-FLYING_UNIT, ml.getY()); break;
-=======
+
                     ml.setLocation(ml.getX()-10, ml.getY()); break;
->>>>>>> a5bf69049c8d7693c254bf2358a8624245b9c7c2
-=======
+
                     ml.setLocation(ml.getX()-10, ml.getY()); break;
->>>>>>> 861e27fefb89de1773c69d35e2dce1816a4b883d
-=======
+
                     ml.setLocation(ml.getX()-10, ml.getY()); break;
->>>>>>> 861e27fefb89de1773c69d35e2dce1816a4b883d
+
+                    ml.setLocation(ml.getX()-10, ml.getY()); break;
+
                 case KeyEvent.VK_RIGHT:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
                     ml.setLocation(ml.getX()+FLYING_UNIT, ml.getY()); break;
-=======
+
                     ml.setLocation(ml.getX()+10, ml.getY()); break;
->>>>>>> a5bf69049c8d7693c254bf2358a8624245b9c7c2
-=======
+
                     ml.setLocation(ml.getX()+10, ml.getY()); break;
->>>>>>> 861e27fefb89de1773c69d35e2dce1816a4b883d
-=======
+
                     ml.setLocation(ml.getX()+10, ml.getY()); break;
->>>>>>> 861e27fefb89de1773c69d35e2dce1816a4b883d
+
+                    ml.setLocation(ml.getX()+10, ml.getY()); break;
+
             }
         }
     }
