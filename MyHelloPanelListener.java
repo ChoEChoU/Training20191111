@@ -4,8 +4,8 @@ import javax.swing.*;
 /**
  * 여기에 MyHelloPanelListener 클래스 설명을 작성하십시오.
  * 
- * @author (작성자 이름) 
- * @version (버전번호나 날짜)
+ * @author (2018315033 태영준, 2018315017 임민택) 
+ * @version (2019.11.11)
  */
 public class MyHelloPanelListener extends JPanel
 {
@@ -37,33 +37,24 @@ public class MyHelloPanelListener extends JPanel
         }
     }
 
-    class myKeyListener implements KeyListener{
+    class myKeyListener extends KeyAdapter{
         public JLabel ml;
-        private final int FLYING_UNIT = 10;
         public myKeyListener(JLabel ml){
             this.ml = ml;
         }
         public void keyPressed(KeyEvent e){
             int keyCode = e.getKeyCode();
-            int FLYING_UNIT = 10;
+            ml.setText(String.valueOf(keyCode));
             switch (keyCode) {
                 case KeyEvent.VK_UP:
-                ml.setLocation(ml.getX(), ml.getY()-FLYING_UNIT); break;
+                    ml.setLocation(ml.getX(), ml.getY()-10);
                 case KeyEvent.VK_DOWN:
-                ml.setLocation(ml.getX(), ml.getY()+FLYING_UNIT); break;
+                    ml.setLocation(ml.getX(), ml.getY()+10);
                 case KeyEvent.VK_LEFT:
-                ml.setLocation(ml.getX()-FLYING_UNIT, ml.getY()); break;
+                    ml.setLocation(ml.getX()-10, ml.getY());
                 case KeyEvent.VK_RIGHT:
-                ml.setLocation(ml.getX()+FLYING_UNIT, ml.getY()); break;
+                    ml.setLocation(ml.getX()+10, ml.getY());
             }
-        }
-
-        public void keyReleased(KeyEvent e){
-
-        }
-
-        public void keyTyped(KeyEvent e){
-
         }
     }
 }
