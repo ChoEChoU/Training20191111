@@ -8,6 +8,6 @@ import javax.swing.*;
 public class MyHelloApp
 {
     public static void main(String[] args){
-        JFrame mf = new MyHelloFrame();
+        JFrame mf = new MyHelloFrame(); //MyHelloFrame 호출
     }
 }
