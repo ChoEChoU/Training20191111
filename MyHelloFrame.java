@@ -16,14 +16,10 @@ public class MyHelloFrame extends JFrame
         this.setTitle("실습_3(2019.11.11)"); // 제목을 실습#3(2019.11.11)으로 설정
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //종료할때 시스템도 같이 종료
         
-        mp = new JPanel();
-        this.add(mp);
-        
-        ml = new JLabel("HELLO");
-        mp.add(ml);
+        MyHelloPanelListener mypl = new MyHelloPanelListener();
+        this.add(mypl);
         
         this.setSize(300, 400);
         this.setVisible(true);
-
     }
 }
