@@ -24,6 +24,12 @@ public class MyHelloFrame extends JFrame
         ml = new JLabel("HELLO");
         mp.add(ml);
         
+        mp = new JPanel();
+        this.add(mp);
+        
+        ml = new JLabel("HELLO");
+        mp.add(ml);
+        
         this.setSize(300, 400);
         this.setVisible(true);
 
