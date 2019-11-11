@@ -3,7 +3,7 @@ import javax.swing.*;
 import java.awt.event.*;
 import java.awt.*;
 /**
- * 여기에 MyHelloFrame 클래스 설명을 작성하십시오.
+ * Frame을 구현한 MyHelloFrame 클래스
  * 
  * @author (2018315033 태영준. 2018315017 임민택) 
  * @version (2019.11.11)
