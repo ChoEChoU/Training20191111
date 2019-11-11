@@ -1,6 +1,7 @@
 
 import java.awt.event.*;
 import javax.swing.*;
+import java.awt.*;
 /**
  * 여기에 MyHelloPanelListener 클래스 설명을 작성하십시오.
  * 
@@ -45,16 +46,16 @@ public class MyHelloPanelListener extends JPanel
         }
         public void keyPressed(KeyEvent e){
             int keyCode = e.getKeyCode();
-            int FLYING_UNIT = 10;
-            switch (keyCode) {
+            
+            switch(keyCode) {
                 case KeyEvent.VK_UP:
-                ml.setLocation(ml.getX(), ml.getY()-FLYING_UNIT); break;
+                    ml.setLocation(ml.getX(), ml.getY()-FLYING_UNIT); break;
                 case KeyEvent.VK_DOWN:
-                ml.setLocation(ml.getX(), ml.getY()+FLYING_UNIT); break;
+                    ml.setLocation(ml.getX(), ml.getY()+FLYING_UNIT); break;
                 case KeyEvent.VK_LEFT:
-                ml.setLocation(ml.getX()-FLYING_UNIT, ml.getY()); break;
+                    ml.setLocation(ml.getX()-FLYING_UNIT, ml.getY()); break;
                 case KeyEvent.VK_RIGHT:
-                ml.setLocation(ml.getX()+FLYING_UNIT, ml.getY()); break;
+                    ml.setLocation(ml.getX()+FLYING_UNIT, ml.getY()); break;
             }
         }
 
