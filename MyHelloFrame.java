@@ -10,14 +10,22 @@ import java.awt.*;
  */
 public class MyHelloFrame extends JFrame
 {
-    public MyHelloFrame(){
-        this.setTitle("실습_3(2019.11.11)"); // 제목을 실습#3(2019.11.11)으로 설정
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //종료할때 시스템도 같이 종료
-        
+    public MyHelloFrame()
+    {
+        this.setTitle("실습_3(2019.11.11)");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
         MyHelloPanelListener mypl = new MyHelloPanelListener();
         this.add(mypl);
         
+        mypl.setFocusable(true);
+        mypl.requestFocus();
+        
+        mypl.addMouseListener(mypl);
+        mypl.addKeyListener(mypl);
+        
         this.setSize(300, 400);
-        this.setVisible(true);
+        setVisible(true);
     }
 }
+
