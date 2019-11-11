@@ -10,9 +10,17 @@ import java.awt.*;
  */
 public class MyHelloFrame extends JFrame
 {
+    public JPanel mp;
+    public JLabel ml;
     public MyHelloFrame(){
         this.setTitle("실습#3(2019.11.11)");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
+        mp = new JPanel();
+        this.add(mp);
+        
+        ml = new JLabel("HELLO");
+        mp.add(ml);
         
         this.setSize(300, 400);
         this.setVisible(true);
