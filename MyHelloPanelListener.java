@@ -11,10 +11,14 @@ public class MyHelloPanelListener extends JPanel
 {
     public JLabel ml;
     public MyHelloPanelListener(){
+        this.setLayout(null);
         ml = new JLabel("HELLO");
+        ml.setSize(50,20);
+        ml.setLocation(30,30);
         this.add(ml);
         this.addKeyListener(new myKeyListener(ml));
         this.addMouseListener(new myMouseListener(ml));
+        ml.addKeyListener(new myKeyListener(ml));
     }
 
     class myMouseListener implements MouseListener{
@@ -44,16 +48,15 @@ public class MyHelloPanelListener extends JPanel
         }
         public void keyPressed(KeyEvent e){
             int keyCode = e.getKeyCode();
-            ml.setText(String.valueOf(keyCode));
             switch (keyCode) {
                 case KeyEvent.VK_UP:
-                    ml.setLocation(ml.getX(), ml.getY()-10);
+                    ml.setLocation(ml.getX(), ml.getY()-10); break;
                 case KeyEvent.VK_DOWN:
-                    ml.setLocation(ml.getX(), ml.getY()+10);
+                    ml.setLocation(ml.getX(), ml.getY()+10); break;
                 case KeyEvent.VK_LEFT:
-                    ml.setLocation(ml.getX()-10, ml.getY());
+                    ml.setLocation(ml.getX()-10, ml.getY()); break;
                 case KeyEvent.VK_RIGHT:
-                    ml.setLocation(ml.getX()+10, ml.getY());
+                    ml.setLocation(ml.getX()+10, ml.getY()); break;
             }
         }
     }
